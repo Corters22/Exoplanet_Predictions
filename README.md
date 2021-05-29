@@ -32,7 +32,7 @@ In order to clean up the data, I dropped features (columns) that correlate with 
       - using sklearn random forest classifier
           R2 score = 1.000
       - Conclusions: This model has a very good R2 score and ran very quickly. It also predicted the test data correctly.
-3. Neural Network - [model_3_NN.ipynb]starter_code/(model_3_NN.ipynb)
+3. Neural Network - [model_3_NN.ipynb](starter_code/(model_3_NN.ipynb)
       - using tensor flow and keras sequential and dense to build model layers
           model accuracy = 0.8473
       - Conclusions: This model also predicted correct classifications and ran very quickly. I also ran a deep network, but didn't get a better accuracy school and it took much longer.
