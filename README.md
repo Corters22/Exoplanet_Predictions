@@ -21,18 +21,18 @@ In order to clean up the data, I dropped features (columns) that correlate with 
 
 ## Models
 
-1. Linear Regression - [starter_code/model_1_LR.ipynb](model_1_LR.ipynb)
+1. Linear Regression - [model_1_LR.ipynb](starter_code/model_1_LR.ipynb)
       - using sklearn linear model
           R2 score = 0.6393
       - using grid search to hyper tune the model
           best score = 0.8276
           elapsed time to run parameters = 3.1 minutes
       - Conclusions: Using simple linear regression does not have a very good R2 score until we add in the grid search to test a lot of different parameters. The time to run the grid search model was extensive. If the data was any larger, it would have taken too much time to run. Predicted test data correctly.
-2. Random Forest - [starter_code/model_2_RF.ipynb](model_2_RF.ipynb)
+2. Random Forest - [model_2_RF.ipynb](starter_code/model_2_RF.ipynb)
       - using sklearn random forest classifier
           R2 score = 1.000
       - Conclusions: This model has a very good R2 score and ran very quickly. It also predicted the test data correctly.
-3. Neural Network - [starter_code/model_3_NN.ipynb](model_3_NN.ipynb)
+3. Neural Network - [model_3_NN.ipynb]starter_code/(model_3_NN.ipynb)
       - using tensor flow and keras sequential and dense to build model layers
           model accuracy = 0.8473
       - Conclusions: This model also predicted correct classifications and ran very quickly. I also ran a deep network, but didn't get a better accuracy school and it took much longer.
