@@ -7,7 +7,7 @@
 
 Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
 
-To help process this data, I created multiple machine learning models capable of classifying candidate exoplanets from the raw dataset.
+To help process this data, I created multiple machine learning models capable of classifying candidate exoplanets from the raw dataset. The goal is to be able to classify the exoplanet found with either 'Confirmed', 'False Positive' or 'Candidate.' 
 
 ## Data
 
@@ -17,7 +17,7 @@ The full dataset can be found [here](https://www.kaggle.com/nasa/kepler-exoplane
 
 The most important part of machine learning is preparing the data before creating a model and training. If your data isn't in the correct format, the models won't work and if you have too much data, you run the risk of overtraining your model. Overtraining can lead to your model 'memorizing' the data as opposed to training to the level where your model will accurately predict data.
 
-In order to clean up the data, I dropped features (columns) that correlate with other features. This is done to make sure overtraining doesn't occur. Rows with NA values were also dropped. The features are then scaled and encoded.
+In order to clean up the data, I dropped features (columns) that correlate with other features. This is done to make sure overtraining doesn't occur. Rows with NA values were also dropped. The features are then scaled and encoded. Using train/test split through the sklearn library, the data was split randomly into two parts, the training data and the testing data. The training data is then used to train each model before testing the predictions.
 
 ## Models
 
@@ -39,3 +39,4 @@ In order to clean up the data, I dropped features (columns) that correlate with 
 
 ## Final Conclusions
 
+The best model for this size and type of data would be the random forest. It was quick and accurate. If the data was any bigger or had more features, the neural network would have been a better option. The model has been saved to an outside file to be used to predict more classifications of exoplanets. You can find the model [here](exoplanet_random_forest.sav).
